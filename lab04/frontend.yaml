@@ -47,15 +47,15 @@ kind: Ingress
 metadata:
   name: frontend-ingress
 spec:
-  ingressClassName: nginx
+  ingressClassName: nginx 
   rules:
   - host: lab04.200lab.example
     http:
-    paths:
-    - pathType: Prefix
-      path: /
-      backend:
-        service:
-          name: frontend
-          port:
-            number: 80    
+      paths:
+      - pathType: Prefix
+        path: / 
+        backend:
+          service:
+            name: frontend
+            port:
+              number: 80
