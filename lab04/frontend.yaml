@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v1/abcd
 kind: Deployment
 metadata:
   name: frontend
