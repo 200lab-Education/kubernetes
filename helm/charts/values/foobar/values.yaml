@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: minhkhoa0502/learning_repo
+  tag: dummy
+
+podLabels:
+  app: foobar
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
