@@ -1,4 +1,4 @@
-apiVersion: apps/v1/abcd
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
@@ -20,8 +20,6 @@ spec:
         env:
         - name: GET_HOSTS_FROM
           value: "dns"
-        - name: test-argocd
-          value: "200lab"          
         ports:
         - containerPort: 80
 ---
